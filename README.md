@@ -23,9 +23,9 @@ I design distributed services in **Go** and **Python**: event-driven pipelines, 
 | **[event-pipeline](https://github.com/learnercys/event-pipeline)** | Payment-event pipeline in Go + Python: transactional outbox, SNS/SQS fan-out, idempotent consumers, and a chaos test (SIGKILLs, a Postgres restart, injected crashes) that proves every balance stays exact. |
 | **[ledger](https://github.com/learnercys/ledger)** | Multi-tenant double-entry ledger in Go: gRPC + HTTP/JSON, Keycloak OIDC, Postgres row-level security, money rules enforced by the database, and property-based tests that prove money is never created, lost or overdrawn. |
 | **[llm-gateway](https://github.com/learnercys/llm-gateway)** | Provider-agnostic LLM gateway in Python: Claude + OpenAI fallback with circuit breakers, structured outputs, per-tenant budgets and rate limits, cost tracking, and a ticket-triage eval suite scored in CI. |
-| **[platform](https://github.com/learnercys/platform)** 🚧 | Terraform + Helm + GitHub Actions deploying all of the above to EKS, with OpenTelemetry tracing and Grafana dashboards. |
+| **[platform](https://github.com/learnercys/platform)** | Helm charts and a one-command local Kubernetes environment for all of the above, an OpenTelemetry pipeline with Grafana dashboards, and Terraform for AWS (EKS, RDS, SNS/SQS, Pod Identity), with security scans and an end-to-end deploy in CI. |
 
-<sub>🚧 = in progress. Every project runs locally with one command (`make up`).</sub>
+<sub>Every project runs locally with one command (`make up`) and has CI that tests it end to end.</sub>
 
 **Fundamentals, for fun:**
 [mini-git](https://github.com/learnercys/mini-git) (a Git implementation in Go) · [monkey](https://github.com/learnercys/monkey) (an interpreter in Go)
