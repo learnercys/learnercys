@@ -22,7 +22,7 @@ I design distributed services in **Go** and **Python**: event-driven pipelines, 
 |---|---|
 | **[event-pipeline](https://github.com/learnercys/event-pipeline)** | Payment-event pipeline in Go + Python: transactional outbox, SNS/SQS fan-out, idempotent consumers, and a chaos test (SIGKILLs, a Postgres restart, injected crashes) that proves every balance stays exact. |
 | **[ledger](https://github.com/learnercys/ledger)** | Multi-tenant double-entry ledger in Go: gRPC + HTTP/JSON, Keycloak OIDC, Postgres row-level security, money rules enforced by the database, and property-based tests that prove money is never created, lost or overdrawn. |
-| **[llm-gateway](https://github.com/learnercys/llm-gateway)** 🚧 | Provider-agnostic LLM gateway (OpenAI + Anthropic) with fallbacks, caching, per-tenant cost tracking, and an eval suite in CI. |
+| **[llm-gateway](https://github.com/learnercys/llm-gateway)** | Provider-agnostic LLM gateway in Python: Claude + OpenAI fallback with circuit breakers, structured outputs, per-tenant budgets and rate limits, cost tracking, and a ticket-triage eval suite scored in CI. |
 | **[platform](https://github.com/learnercys/platform)** 🚧 | Terraform + Helm + GitHub Actions deploying all of the above to EKS, with OpenTelemetry tracing and Grafana dashboards. |
 
 <sub>🚧 = in progress. Every project runs locally with one command (`make up`).</sub>
